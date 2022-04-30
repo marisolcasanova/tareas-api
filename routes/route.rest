@@ -1,0 +1,46 @@
+GET http://localhost:3030/tareas
+
+
+POST http://localhost:3001/tareas
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "tarea1",
+    "puntos": 10,
+    "materia": "materia1",
+    "fechaEntrega": "2022-03-26"
+}
+
+POST http://localhost:3001/tareas
+Content-Type: application/json
+
+{
+    "id": 5,
+    "name": "tarea5",
+    "puntos": 10,
+    "materia": "materia5",
+    "fechaEntrega": "2022-06-16"
+}
+
+POST http://localhost:3001/tareas
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "tarea3",
+    "puntos": 9,
+    "materia": "materia2",
+    "fechaEntrega": "2022-06-10"
+}
+
+PUT http://localhost:3001/tareas/623e74d03f578c69a8e05495
+Content-Type: application/json
+
+{
+    "name": "tarea4"
+}
+
+DELETE http://localhost:3030/tareas/2
+
+
