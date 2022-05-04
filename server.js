@@ -5,7 +5,7 @@ const mongoose = require("mongoose")
 
 //crear server
 const app = express();
-const port = 80;
+const port = 3030;
 
 //conexión a la BD
 mongoose.connect("mongodb+srv://marisolcasanova:casanovasa@cluster0.nf93k.mongodb.net/tareas?retryWrites=true&w=majority", {useNewUrlParser: true});
