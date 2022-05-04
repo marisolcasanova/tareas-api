@@ -8,7 +8,7 @@ const app = express();
 const port = 3030;
 
 //conexión a la BD
-mongoose.connect(process.env.DATABASE_URL_CLOUD, {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://marisolcasanova:casanovasa@cluster0.nf93k.mongodb.net/tareas?retryWrites=true&w=majority", {useNewUrlParser: true});
 const db = mongoose.connection;
 
 //setear manejo de eventos 
