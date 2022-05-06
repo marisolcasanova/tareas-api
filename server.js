@@ -10,6 +10,7 @@ const port = 3030;
 //conexión a la BD
 mongoose.connect("mongodb+srv://marisolcasanova:casanovasa@cluster0.nf93k.mongodb.net/tareas?retryWrites=true&w=majority", {useNewUrlParser: true});
 const db = mongoose.connection;
+console.log("probando conexion");
 
 //setear manejo de eventos 
 db.on("error", (error) => console.error(error));
